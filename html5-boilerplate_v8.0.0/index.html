@@ -1,0 +1,226 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+ 
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <img src="img/icon-header.png"  width="100" height="110" alt="img header">
+    <h1 class="display-1 upper-text-title">The Fashion Pet</h1>
+    <p></p>
+  
+  </header>
+  <img src="img/dogs-header.png" alt="img header" height="140" style="position: absolute;margin-top: -7.8rem;">
+  <ul class="nav">
+    <li class="nav-item active">
+      <a class="nav-link upper-text-menu" aria-current="page" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link upper-text-menu" href="about.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link upper-text-menu" href="services.html">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link upper-text-menu" href="register.html" tabindex="-1" aria-disabled="true">Register</a>
+    </li>
+  </ul>
+  <main class="container">
+    <div>
+      <h3 class="upper-text">Grooming with Pet Salon</h3>
+      <p>More than a puppy haircut o a kitty nail trimming. We put your pets comfort and joy
+      on the forefront of everthing we do.
+      At the one and only Pet Salon, yoy can believe your furry critter will get the best grooming
+      service available, done by skilled and passionate professionals.</p>
+
+      <p>The Pet Salon groomers stand out from the rest by frequently hair styling dogs for the 
+      purpose of dog shows. So you can bet your puppers style is good enough for the big leagues.
+      Comfort, care and love. We put our hearts into every pet hair style, manicure, and pet 
+      hygiene service we offer. The Pet Salon is here to serve.</p>  
+     
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/header-puppy-3.jpg" style="width:100%">
+        <div class="text">Pet Salon Check our services</div>
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/header-puppy-2.jpg" style="width:100%; height: 400px ;">
+        <div class="text">Pet Salon Check our services</div>
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/header-puppy-1.jpg" style="width:100%">
+        <div class="text">Pet Salon Check our services</div>
+      </div>
+      
+      <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlide(1)">&#10095;</a>
+      
+    </div><br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+      <h3 class="upper-text"><br>Services Offered. </h3>
+      <p>We have all your pet grooming needs covered! From bathing to daycare, you can count on Pet Salon
+      and our experience staff to provide the absolute best grooming experience for you and your
+      furry loved one.</p>
+      <div class="card-container-services">
+        <div id="card-about-salon" class="card card-index">
+          <img src="img/haircut.png" style=" width: 200px; height: 200px; padding: 2rem;" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title upper-text">Hair cut</h5>
+          </div>
+          <a id="hair" class ="btn btn-warning" href="services.html">Detail ></a>
+        </div>
+
+        <div id="card-about-salon" class="card card-index">
+          <img class="card-img-top" style=" width: 200px; height: 200px; padding: 2rem;" src="img/nail-scissors.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title upper-text">Nails cut</h5>
+          </div>
+          <a id="nails" class ="btn btn-warning" href="services.html">Details ></a>
+        </div>
+
+        <div id="card-about-salon" class="card card-index">
+          <img class="card-img-top" style=" width: 200px; height: 200px; padding: 2rem;" src="img/bath.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title upper-text">Shower</h5>
+          </div>
+          <a id="shower" class ="btn btn-warning" href="services.html">Details ></a>
+        </div>
+
+        <div id="card-about-salon" class="card card-index">
+          <img class="card-img-top" style=" width: 200px; height: 200px; padding: 2rem;" src="img/dog.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title upper-text">Full Service</h5>
+          </div>
+          <a id="full" class ="btn btn-warning" href="services.html">Details ></a>
+        </div>
+      </div>
+    </div>
+    <h3 class="upper-text">Location</h3>
+    <div id="map"></div>
+    
+  </main>
+  <div style="background-color: #ececec;">
+    <div class="row">
+      <div class="column">
+        <h2 class="upper-text">Business Hours</h2>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td style="font-size: 14px;">Mon</td>
+              <td style="font-size: 14px;">10:00 am - 7:00 pm</td>
+            </tr>
+            <tr>
+              <td style="font-size: 14px;">Tue</td>
+              <td style="font-size: 14px;">10:00 am - 7:00 pm</td>
+            </tr>
+            <tr>
+              <td style="font-size: 14px;">Wed</td>
+              <td style="font-size: 14px;">9:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+              <td style="font-size: 14px;">Thu</td>
+              <td style="font-size: 14px;">9:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+              <td style="font-size: 14px;">Fri</td>
+              <td style="font-size: 14px;">9:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+              <td style="font-size: 14px;">Sat</td>
+              <td style="font-size: 14px;">9:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+              <td style="font-size: 14px;">Sun</td>
+              <td style="font-size: 14px;">Closed</td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
+      <div class="column">
+        <h2 class="upper-text">Contact Info</h2>
+        <div class="bottom-options">
+          <p>Location:</p>
+          <p>458 Pacific St, Brooklyn, NY 152145</p>
+          <p>Phone:</p>
+          <p>718-458-0025</p>
+          <p>Email:</p>
+          <p>petsalon@gmail.com</p>
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="upper-text">Follow us</h2>
+        <div class="bottom-options">
+          <p>
+            <i class="icon-space fab fa-facebook-square"></i>
+            <i class="icon-space fab fa-twitter"></i>
+            <i class="icon-space fab fa-instagram"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <span class="footer-img"><img class="logo" src="img/icon-header.png" style=" width: 80px; height: 80px;" alt="icon"></span>
+      <span class="text-footer"> Copyright &copy;  2018-2021 Pet Salon | Copyright &copy;  2018-2021 Pet Salon. All rights reserved.</span>
+    </div>
+  </footer>
+  <!-- Add your site or application content here -->
+  
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

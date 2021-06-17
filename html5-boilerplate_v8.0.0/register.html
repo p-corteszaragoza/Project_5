@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+  <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+    <header>
+      <img src="img/icon-header.png"  width="100" height="110" alt="img header">
+      <h1 class="display-1 upper-text-title">The Fashion Pet</h1>
+      <p></p>
+    
+    </header>
+    <img src="img/dogs-header.png" alt="img header" height="140" style="position: absolute;margin-top: -7.8rem;">
+    <ul class="nav">
+      <li class="nav-item active">
+        <a class="nav-link upper-text-menu" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link upper-text-menu" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link upper-text-menu" href="services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link upper-text-menu" href="register.html" tabindex="-1" aria-disabled="true">Register</a>
+      </li>
+    </ul>
+  
+    
+    <main class="container">
+      <h2 class="upper-text">Register</h2>
+      <div id="information">  </div>
+
+      <form action ="#">
+        <input type = "text" class="form-control" name = "petName" id = "petName", placeholder="Name"> <br>
+        <select class="form-control" name="type" id="type">
+          <option value="dog">Dog 🐕</option>
+          <option value="cat">Cat 🐱</option>
+          <option value="bird">Bird 🐦</option>
+          <option value="other">Other😊</option>
+        </select><br>
+
+        <input type = "number" class="form-control" name = "petAge" id = "petAge", placeholder="Age"> <br>
+        <input type = "text" class="form-control" name = "petBreed" id = "petBreed", placeholder="Breed"> <br>
+        <input type = "text" class="form-control" name = "petGender" id = "petGender", placeholder="Gender"> <br>
+        <select class="form-control" name ="petService" id="petService"> <br>
+          <option value="" selected disabled>----------Select an option -----------</option> <br>
+          <option value="hair">Hair cut</option> <br>
+          <option value="nails">Nails cut</option> <br>
+          <option value="shower">Shower</option> <br>
+          <option value="full">Full Service</option> <br>
+        </select><br>
+        <input class="form-control" type = "text" name = "ownerName" id = "ownerName", placeholder="Owner's Name"><br>
+        <input class="form-control" type = "tel" name = "contactPhone" id = "contactPhone", placeholder="Contact phone"><br>
+      </form>
+      
+      <button id="register-btn" class ="btn btn-warning">Register</button>
+      <div id="alert-box" class="alert alert-success hidden" role="alert"> 
+        The register was succesful!
+      </div>
+      <p id ="profits"></p>
+      <div id="types"></div>
+      <div id="pets"></div>
+
+      <div class="input-group mb-3">
+        <input id = "search" name="search" type="text" class="form-control" placeholder="Search pets by Name " aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+      </div>
+
+      <table class="table">
+        <thead>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Breed</th>
+          <th>Type</th>
+          <th>Service</th>
+          <th>Price</th>
+          <th>Owner Name</th>
+          <th>Contact Phone</th>
+          <th></th>
+        </thead>
+
+        <tbody id="pet-table"></tbody>
+      </table>
+    </main>
+    <div style="background-color: #ececec;">
+      <div class="row">
+        <div class="column">
+          <h2 class="upper-text">Business Hours</h2>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td style="font-size: 14px;">Mon</td>
+                <td style="font-size: 14px;">10:00 am - 7:00 pm</td>
+              </tr>
+              <tr>
+                <td style="font-size: 14px;">Tue</td>
+                <td style="font-size: 14px;">10:00 am - 7:00 pm</td>
+              </tr>
+              <tr>
+                <td style="font-size: 14px;">Wed</td>
+                <td style="font-size: 14px;">9:00 am - 5:00 pm</td>
+              </tr>
+              <tr>
+                <td style="font-size: 14px;">Thu</td>
+                <td style="font-size: 14px;">9:00 am - 5:00 pm</td>
+              </tr>
+              <tr>
+                <td style="font-size: 14px;">Fri</td>
+                <td style="font-size: 14px;">9:00 am - 5:00 pm</td>
+              </tr>
+              <tr>
+                <td style="font-size: 14px;">Sat</td>
+                <td style="font-size: 14px;">9:00 am - 5:00 pm</td>
+              </tr>
+              <tr>
+                <td style="font-size: 14px;">Sun</td>
+                <td style="font-size: 14px;">Closed</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="column">
+          <h2 class="upper-text">Contact Info</h2>
+          <div class="bottom-options">
+            <p>Location:</p>
+            <p>458 Pacific St, Brooklyn, NY 152145</p>
+            <p>Phone:</p>
+            <p>718-458-0025</p>
+            <p>Email:</p>
+            <p>petsalon@gmail.com</p>
+          </div>
+        </div>
+        <div class="column">
+          <h2 class="upper-text">Follow us</h2>
+          <div class="bottom-options">
+            <p>
+              <i class="icon-space fab fa-facebook-square"></i>
+              <i class="icon-space fab fa-twitter"></i>
+              <i class="icon-space fab fa-instagram"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer>
+      <div class="footer-container">
+        <span class="footer-img"><img class="logo" src="img/icon-header.png" style=" width: 80px; height: 80px;" alt="icon"></span>
+        <span class="text-footer"> Copyright &copy;  2018-2021 Pet Salon | Copyright &copy;  2018-2021 Pet Salon. All rights reserved.</span>
+      </div>
+    </footer>
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>
